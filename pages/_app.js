@@ -10,12 +10,25 @@ const roboto = Roboto({
 
 import { AnimatePresence } from "framer-motion";
 
+import Layout from "@/components/layout/Layout";
+
+import { useRouter } from "next/router";
 export default function App({ Component, pageProps }) {
+	const router = useRouter();
+
 	return (
 		<AnimatePresence>
-			<main className={roboto.className}>
-				<Component {...pageProps} />
-			</main>
+			{router.pathname === "/" ? (
+				<main className={roboto.className}>
+					<Component {...pageProps} />
+				</main>
+			) : (
+				<Layout>
+					<main className={roboto.className}>
+						<Component {...pageProps} />
+					</main>
+				</Layout>
+			)}
 		</AnimatePresence>
 	);
 }
