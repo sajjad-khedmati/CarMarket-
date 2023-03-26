@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
 
 	return (
 		<AnimatePresence>
-			{router.pathname === "/" ? (
+			{router.pathname === "/" || router.pathname === "/error" ? (
 				<main className={roboto.className}>
 					<Component {...pageProps} />
 				</main>

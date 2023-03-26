@@ -8,7 +8,6 @@ import {
 } from "@iconscout/react-unicons";
 import { useRouter } from "next/router";
 
-import { motion } from "framer-motion";
 import BottomNavItem from "../BottomNavItem";
 
 export default function BottomNavigation() {
