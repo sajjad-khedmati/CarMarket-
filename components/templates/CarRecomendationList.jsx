@@ -6,7 +6,7 @@ import CarCard from "../modules/CarCard";
 
 export default function CarRecomendationList() {
 	return (
-		<main className="container overflow-y-scroll ">
+		<main className="container overflow-y-scroll h-full">
 			<div className="flex justify-between items-center ">
 				<h2 className="text-xl font-bold">Car Recomendation</h2>
 				<Link

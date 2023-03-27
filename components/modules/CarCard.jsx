@@ -2,11 +2,18 @@ import Image from "next/image";
 
 import { UilHeartAlt, UilStar } from "@iconscout/react-unicons";
 
+import { motion } from "framer-motion";
+
 export default function CarCard({ data }) {
 	return (
 		<>
 			{/* card */}
-			<div className="rounded-xl px-4 py-8 shadow-xl shadow-slate-200/80">
+			<motion.div
+				initial={{ y: 50 }}
+				whileInView={{ y: 0 }}
+				transition={{ type: "spring", delay: 0.3 }}
+				className="rounded-xl px-4 py-8 shadow-xl shadow-slate-200/80"
+			>
 				{/* card Hedaer */}
 				<div className="flex items-center justify-between drop-shadow-md shadow-slate-200/50">
 					{data.freeTestDrive && (
@@ -70,7 +77,7 @@ export default function CarCard({ data }) {
 						</span>
 					</p>
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 }

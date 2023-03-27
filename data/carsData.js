@@ -30,7 +30,7 @@ const carsList = [
 		category: "suv",
 		freeTestDrive: true,
 		rating: 4.3,
-		power: 340,
+		power: 175,
 		gearbox: "automatic",
 	},
 	{
