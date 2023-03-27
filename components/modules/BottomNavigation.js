@@ -13,7 +13,7 @@ import BottomNavItem from "../BottomNavItem";
 export default function BottomNavigation() {
 	const router = useRouter();
 	return (
-		<nav className="fixed bottom-0 left-0 right-0 bg-transparent px-8 pt-2 pb-12 flex items-center justify-between">
+		<nav className="fixed bottom-0 left-0 right-0 bg-white z-50 px-8 pt-4 pb-10 flex items-center justify-between">
 			<Link href="/home">
 				{router.pathname === "/home" ? (
 					<BottomNavItem title="Home" icon={<UilEstate />} isActive={true} />

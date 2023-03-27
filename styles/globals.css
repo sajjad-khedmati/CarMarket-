@@ -16,5 +16,5 @@ body {
 @tailwind utilities;
 
 .container {
-	@apply px-6 py-12;
+	@apply px-6 py-4;
 }

@@ -4,7 +4,7 @@ import SearchInput from "../modules/SearchInput";
 
 export default function HomeHeader() {
 	return (
-		<header className="container w-screen h-screen overflow-y-scroll">
+		<header className="container w-screen h-max my-4">
 			<div className="flex justify-between items-center">
 				<div className="flex gap-3 items-center">
 					<UilMapMarker className="w-8 h-8 text-gray-600" />
