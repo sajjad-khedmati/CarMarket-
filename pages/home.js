@@ -1,7 +1,6 @@
-import TestDriveBanner from "@/components/modules/TestDriveBanner";
+import AvailableCars from "@/components/templates/AvailableCars";
 import CarRecomendationList from "@/components/templates/CarRecomendationList";
 import HomeHeader from "@/components/templates/HomeHeader";
-import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Home() {
 	return (
@@ -9,7 +8,7 @@ export default function Home() {
 			<HomeHeader />
 			<div className="overflow-y-scroll h-full pb-32">
 				<CarRecomendationList />
-				<TestDriveBanner />
+				<AvailableCars />
 			</div>
 		</section>
 	);
