@@ -22,12 +22,19 @@ export default function CarCard({ data }) {
 						</span>
 					)}
 
-					<UilHeartAlt className="w-8 h-8 text-slate-500" />
+					<UilHeartAlt className="w-8 h-8 text-slate-500 ml-auto" />
 				</div>
 				{/* card body */}
-				<div className="flex flex-col gap-3 w-full">
+				<div className="flex flex-col gap-3 w-full h-auto">
 					<div className="relative w-full h-48 mt-7">
-						<Image src={data.image} className="p-4" alt={data.model} fill />
+						<Image
+							className="p-4"
+							src={data.image}
+							quality={100}
+							alt={data.model}
+							fill
+							style={{ objectFit: "contain" }}
+						/>
 					</div>
 					<div className="flex items-center justify-between">
 						<p className="font-semibold text-lg">
@@ -73,7 +80,7 @@ export default function CarCard({ data }) {
 					<p className="text-slate-500">
 						${" "}
 						<span className="font-bold text-slate-800">
-							{data.price.toLocaleString()}
+							{data.price.toLocaleString("en")}
 						</span>
 					</p>
 				</div>

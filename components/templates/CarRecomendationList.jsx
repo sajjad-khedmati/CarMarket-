@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import carsList from "../../data/carsData";
+import CarsRecomendation from "../../data/carsRecomendation";
 
 import CarCard from "../modules/CarCard";
 
@@ -17,7 +17,7 @@ export default function CarRecomendationList() {
 				</Link>
 			</div>
 			<div className="grid grid-cols-1 gap-2 mb-32">
-				{carsList.slice(0, 2).map((item) => (
+				{CarsRecomendation.slice(0, 3).map((item) => (
 					<CarCard key={item.id} data={item} />
 				))}
 			</div>
