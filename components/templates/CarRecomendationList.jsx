@@ -6,7 +6,7 @@ import CarCard from "../modules/CarCard";
 
 export default function CarRecomendationList() {
 	return (
-		<main className="container overflow-y-scroll h-full">
+		<main className="container">
 			<div className="flex justify-between items-center ">
 				<h2 className="text-xl font-bold">Car Recomendation</h2>
 				<Link
@@ -16,7 +16,7 @@ export default function CarRecomendationList() {
 					view all
 				</Link>
 			</div>
-			<div className="grid grid-cols-1 gap-2 mb-32">
+			<div className="grid grid-cols-1 gap-2">
 				{CarsRecomendation.slice(0, 3).map((item) => (
 					<CarCard key={item.id} data={item} />
 				))}
