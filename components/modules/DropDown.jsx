@@ -26,8 +26,8 @@ export default function DropDown({ options }) {
 			className="relative"
 			onClick={() => setOpenOption(!openOption)}
 		>
-			<div className="w-40 px-4 py-2 border-2 border-slate-100 rounded-2xl flex items-center justify-between">
-				<span>{activeOption}</span>
+			<div className="w-40 px-6 py-3 border-2 border-slate-200/70 shadow-xl shadow-slate-100/80 rounded-2xl flex items-center justify-between">
+				<span className="font-semibold truncate">{activeOption}</span>
 				<UilAngleDown className="h-full w-auto" />
 			</div>
 			{openOption && (
