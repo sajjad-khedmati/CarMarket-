@@ -18,7 +18,7 @@ export default function CarRecomendationList() {
 				</Link>
 			</div>
 			<div className="grid grid-cols-1 gap-2">
-				{CarsRecomendation.slice(0, 3).map((item) => (
+				{CarsRecomendation.slice(0, 2).map((item) => (
 					<CarCard key={item.id} data={item} />
 				))}
 			</div>

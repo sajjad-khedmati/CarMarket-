@@ -22,8 +22,9 @@ export default function TestDriveBanner() {
 					</p>
 				</div>
 				<Link
-					className="w-max px-6 py-2 border-2 border-slate-400 text-slate-300 rounded-xl text-center"
-					href="cars"
+					className="w-max px-6 py-2 border-2 border-slate-400 text-slate-300 rounded-xl 
+					text-center hover:bg-slate-700 hover:text-slate-200 transition-all duration-300"
+					href="/cars/free-test-drive"
 				>
 					view Cars
 				</Link>
