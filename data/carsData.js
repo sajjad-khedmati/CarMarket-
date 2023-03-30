@@ -15,6 +15,7 @@ const carsList = [
 		rating: 4.8,
 		power: 540,
 		gearbox: "automatic",
+		recomended: true,
 	},
 	{
 		id: 2,
@@ -80,7 +81,7 @@ const carsList = [
 			"Few cars are capable of serving the gods of both comfort and sportiness as well as the 2023 BMW 3-series sedan. This perennial favorite can be outfitted as a corner-carving sports sedan or a well-appointed entry-luxury car—or a combination of both. Its three available turbocharged powertrains deftly walk the line between power and polish. The entry-level 330i and plug-in hybrid 330e offer impressive performance with above average fuel economy, while the turbocharged inline-six in the top-dog M340i packs 382 of the biggest, strongest horses this side of the Bavarian Alps. The 3-series doesn’t have the style of the Alfa Romeo Giulia or the value-packed features list of the Genesis G70, but it’s so well-rounded, athletic, and engaging to drive that it stands at the very top of our segment rankings. BMW’s quintessential sports sedan gets a tech-heavy makeover for 2023 that sees updated exterior styling and a dramatic new all-digital dashboard. Keen eyes will notice that this same monolithic display that stretches two-thirds of the 3-series’s dashboard is the same design as what you’ll find in the brand’s flagship 7-series and electric iX SUV. The wall of screens runs BMW’s iDrive 8 interface and includes standard navigation, a voice assistant, and a 5G Wi-FI hotspot.",
 		image: "/assets/bmw730.png",
 		category: "sedan",
-		freeTestDrive: false,
+		freeTestDrive: true,
 		rating: 4.8,
 		power: 470,
 		gearbox: "automatic",
