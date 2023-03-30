@@ -1,27 +1,27 @@
 const carCategories = [
 	{
 		id: 1,
-		title: "Sedan",
+		title: "sedan",
 		icon: "/icons/sedan.svg",
 	},
 	{
 		id: 2,
-		title: "Hatchback",
+		title: "hatchback",
 		icon: "/icons/hatchback.svg",
 	},
 	{
 		id: 3,
-		title: "Super Sport",
+		title: "super sport",
 		icon: "/icons/super-sport.svg",
 	},
 	{
 		id: 4,
-		title: "Sport",
+		title: "sport",
 		icon: "/icons/sport.svg",
 	},
 	{
 		id: 5,
-		title: "SUV",
+		title: "suv",
 		icon: "/icons/suv.svg",
 	},
 ];

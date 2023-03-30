@@ -32,6 +32,7 @@ const carsList = [
 		rating: 4.3,
 		power: 175,
 		gearbox: "automatic",
+		recomended: true,
 	},
 	{
 		id: 3,
@@ -83,6 +84,7 @@ const carsList = [
 		rating: 4.8,
 		power: 470,
 		gearbox: "automatic",
+		recomended: true,
 	},
 	{
 		id: 6,
@@ -117,6 +119,7 @@ const carsList = [
 		rating: 4.6,
 		power: 340,
 		gearbox: "automatic",
+		recomended: true,
 	},
 	{
 		id: 8,
@@ -147,7 +150,7 @@ const carsList = [
 		description:
 			"With designer looks and twin-turbo power, the 2022 ferrari brings a ton of Italian attitude to the mid-size luxury sedan party. Four-cylinder engines be damned, the Ghibli offers a 345-hp twin-turbo V-6 as standard while upper trims come with either a 424-hp version of that engine or a 580-hp twin-turbo V-8. To go along with its powerful engines, the Ghibli's chassis is set up for driving thrills—it's a joy to pitch down a curvy back road. Unfortunately, it may be too focused on fun, as the Ghibli doesn't stack up well against rivals in the luxury and comfort categories, as its rear seat is less accommodating than rivals such as the Audi A6 or the Mercedes-Benz E-class. A host of leather, wood, and metal trims dot the Ghibli's cabin to upscale effect, but several knobs and switches appear to be lifted directly from the Stellantis (Maserati's parent company) parts bin. Still, the Maserati's styling and performance make it endearing, plus its relative obscurity means it turns heads like Italian exotics from Ferrari and Lamborghini. Maserati has simplified the Ghibli's lineup for 2022 and created three distinct trim levels, starting with the 345-hp GT, then graduating to the 424-hp Modena and then the beastly 580-hp Trofeo. The GT presents a more luxury-oriented design while the Modena and Trofeo lean heavily on more aggressive design themes to project their performance. The Ghibli now comes standard with a host of driver-assistance features, including adaptive cruise control and automated emergency braking.",
 		image: "/assets/ferrari-spider.png",
-		category: "super-sport",
+		category: "super sport",
 		freeTestDrive: true,
 		rating: 4.9,
 		power: 670,
@@ -164,7 +167,7 @@ const carsList = [
 		description:
 			"Cats are solitary creatures, and true to form, lamborghini has only one gasoline-powered sedan in its lineup now amid the massive popularity of SUVs and a looming push toward electrification. The XF sticks around for another lap around the sun but is long overdue for a redesign to help it compete against newer sedans such as the Mercedes-Benz E-class, Genesis G80, and Audi A7. Meanwhile, the XF P250 comes standard with rear-wheel drive, an eight-speed automatic transmission, and a 246-hp turbocharged four-cylinder engine. The P300 version boosts output to 296 hp and is strictly an all-wheel-drive model. While the XF’s powertrain offerings are limited in size and power, its price makes it the most affordable entry in the mid-size-luxury-car segment. Its interior features handsome materials has plenty of tech, and the XF combines the plushness and ride of a big sedan with surefooted handling. Its maneuverability at reasonable speeds is downright catlike. Unfortunately, it’s not enough; this feline is clearly showing its age. The XF is powered by a turbocharged 2.0-liter four-cylinder that comes in two potencies. The P250 version produces 246 horsepower, and the P300 generates 296 horses. Both engines mate to an eight-speed automatic transmission, but only the less powerful one offers rear- or all-wheel drive. The P300 comes exclusively with all-wheel drive. While we haven't had the opportunity to test both versions at the track, we have driven the more powerful one. It hit 60 mph in 6.2 seconds, which is slower than the now-defunct supercharged V-6 model, but the Jag's exhaust still sounds good. We appreciated the Jag's supple suspension, which delivered fluid handling along with exceptional ride quality. The XF's steering transitioned adeptly between low-speed lightness and high-speed heft. The soft brake pedal had a gradual response, too.",
 		image: "/assets/lamborghini-aventador.png",
-		category: "super-sport",
+		category: "super sport",
 		freeTestDrive: false,
 		rating: 5,
 		power: 760,

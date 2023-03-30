@@ -7,7 +7,37 @@ import DropDown from "@/components/modules/DropDown";
 import carsList from "@/data/carsData";
 import CarListCard from "@/components/modules/CarListCard";
 
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+
 export default function CarsIndex() {
+	const [data, setData] = useState([]);
+	const [filter, setFilter] = useState({ type: "all" });
+	const router = useRouter();
+
+	useEffect(() => {
+		if (Object.keys(router.query).length > 0) {
+			if (filter.type.toLowerCase() !== "all") {
+				setData(
+					carsList.filter(
+						(item) =>
+							item.category === router.query.category && item.recomended,
+					),
+				);
+			} else {
+				setData(
+					carsList.filter((item) => item.category === router.query.category),
+				);
+			}
+		} else {
+			if (filter.type.toLowerCase() !== "all") {
+				setData(carsList.filter((item) => item.recomended));
+			} else {
+				setData(carsList);
+			}
+		}
+	}, [router, filter]);
+
 	return (
 		<section className="w-scren h-screen overflow-y-scroll container">
 			<header>
@@ -26,7 +56,11 @@ export default function CarsIndex() {
 
 				<div>
 					<div className="duration-300 rounded-2xl transition-all mt-4 py-4 flex justify-between gap-4">
-						<DropDown options={["All", "Recomended"]} />
+						<DropDown
+							options={["All", "Recomended"]}
+							setter={setFilter}
+							filter={filter}
+						/>
 						<div className="border-2 min-w-max border-slate-200/70  shadow-xl shadow-slate-100/80 rounded-2xl px-6 py-3 flex items-center gap-2">
 							<UilFilter className="w-6 h-6" />
 							<span className="font-semibold">filter</span>
@@ -36,9 +70,15 @@ export default function CarsIndex() {
 			</header>
 			<body>
 				<section className="grid grid-cols-1 gap-4 my-4">
-					{carsList.map((item) => (
-						<CarListCard key={item.id} data={item} />
-					))}
+					{data.length > 0 ? (
+						data.map((item) => <CarListCard key={item.id} data={item} />)
+					) : (
+						<div className="w-full h-full flex items-center justify-center">
+							<p className="animate-bounce mt-12 font-semibold text-lg">
+								Item not found
+							</p>
+						</div>
+					)}
 				</section>
 			</body>
 		</section>

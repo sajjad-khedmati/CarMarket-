@@ -2,7 +2,7 @@ import { UilAngleDown } from "@iconscout/react-unicons";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-export default function DropDown({ options }) {
+export default function DropDown({ options, setter, filter }) {
 	const [openOption, setOpenOption] = useState(false);
 	const [activeOption, setActiveOption] = useState(options[0]);
 
@@ -19,6 +19,9 @@ export default function DropDown({ options }) {
 
 		return () => document.removeEventListener("click", handleClickOutside);
 	}, [openOption]);
+	useEffect(() => {
+		setter({ ...filter, type: activeOption });
+	}, [activeOption]);
 
 	return (
 		<div
