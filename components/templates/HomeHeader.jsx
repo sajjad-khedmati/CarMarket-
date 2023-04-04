@@ -19,8 +19,10 @@ export default function HomeHeader() {
 					<UilBell className="w-full h-full text-gray-600" />
 				</div>
 			</div>
-			<SearchInput />
-			<CategoryScrollList />
+			<div className="md:flex lg:flex-row-reverse gap-20 items-center justify-between">
+				<SearchInput />
+				<CategoryScrollList />
+			</div>
 		</header>
 	);
 }

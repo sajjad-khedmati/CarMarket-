@@ -10,7 +10,7 @@ export default function Recomendations(props) {
 
 	return (
 		<section className="w-scren h-screen overflow-y-scroll container">
-			<header>
+			<div>
 				<nav className="flex items-center py-4">
 					<Link
 						href="/home"
@@ -23,9 +23,9 @@ export default function Recomendations(props) {
 						<UilSearch className="w-6 h-6" />
 					</div>
 				</nav>
-			</header>
-			<body>
-				<section className="grid grid-cols-1 gap-4 my-4">
+			</div>
+			<div>
+				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 my-4">
 					{data.length > 0 ? (
 						data.map((item) => <CarListCard key={item.id} data={item} />)
 					) : (
@@ -36,7 +36,7 @@ export default function Recomendations(props) {
 						</div>
 					)}
 				</section>
-			</body>
+			</div>
 		</section>
 	);
 }

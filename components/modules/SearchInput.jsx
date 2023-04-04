@@ -2,7 +2,7 @@ import { UilSearch } from "@iconscout/react-unicons";
 
 export default function SearchInput() {
 	return (
-		<div className="w-full mt-10 relative group">
+		<div className="w-full lg:w-96 mt-10 md:mt-4 relative group">
 			<input
 				type="text"
 				className="bg-slate-100  py-4 px-4 rounded-2xl shadow-lg shadow-slate-200/40 w-full placeholder:text-lg placeholder:text-slate-400/70 

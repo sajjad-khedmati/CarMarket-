@@ -21,7 +21,7 @@ export default function CategoryScrollList() {
 				))}
 			</ScrollContainer>
 
-			<div className="flex w-full justify-center gap-1">
+			<div className="flex w-full md:hidden justify-center gap-1">
 				<span
 					className={`h-1 rounded-full bg-slate-500 transition-all duration-300 ${
 						scrollStart ? "w-2" : "w-4"

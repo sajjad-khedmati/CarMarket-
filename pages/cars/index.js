@@ -39,7 +39,7 @@ export default function CarsIndex() {
 	}, [router, filter]);
 
 	return (
-		<section className="w-scren h-screen overflow-y-scroll container">
+		<section className="w-scren h-screen container">
 			<header>
 				<nav className="flex items-center py-4">
 					<Link
@@ -68,8 +68,8 @@ export default function CarsIndex() {
 					</div>
 				</div>
 			</header>
-			<body>
-				<section className="grid grid-cols-1 gap-4 my-4">
+			<body className="overflow-hidden">
+				<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-8 my-4">
 					{data.length > 0 ? (
 						data.map((item) => <CarListCard key={item.id} data={item} />)
 					) : (
